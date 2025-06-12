@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Código Fluente - E-book Completo</title>
+    <meta name="description" content="Domine o front-end de forma simples, prática e direta com o e-book Código Fluente. 199 páginas focadas em iniciantes.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav container">
+            <div class="nav-brand">
+                <i class="fas fa-code"></i>
+                Código Fluente
+            </div>
+            <div class="nav-links">
+                <a href="#sobre">Sobre</a>
+                <a href="#conteudo">Conteúdo</a>
+                <a href="#depoimentos">Depoimentos</a>
+                <a href="#faq">FAQ</a>
+                <button class="btn-nav" onclick="scrollToSection('cta')">Comprar Agora</button>
+            </div>
+            <div class="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-background"></div>
+        <div class="gradient-overlay"></div>
+        <div class="floating-elements">
+            <div class="floating-element" style="top: 10%; left: 10%;"><i class="fab fa-html5"></i></div>
+            <div class="floating-element" style="top: 20%; right: 15%;"><i class="fab fa-css3-alt"></i></div>
+            <div class="floating-element" style="bottom: 30%; left: 20%;"><i class="fab fa-js-square"></i></div>
+            <div class="floating-element" style="bottom: 20%; right: 10%;"><i class="fab fa-react"></i></div>
+        </div>
+        
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <div class="badge">
+                        <i class="fas fa-fire"></i>
+                        Oferta Limitada
+                    </div>
+                    
+                    <h1 class="hero-title">
+                        <span class="gradient-text">Código Fluente</span><br>
+                        Sem Complicação
+                    </h1>
+                    
+                    <p class="hero-subtitle">
+                        Domine o front-end de forma simples, prática e direta. 199 páginas focadas em iniciantes com linguagem clara e acessível.
+                    </p>
+                    
+                    <div class="hero-features">
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>HTML, CSS, JavaScript e React</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>+100 exercícios práticos</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Bônus exclusivos inclusos</span>
+                        </div>
+                    </div>
+                    
+                    <div class="hero-cta">
+                        <div class="price-section">
+                            <div class="price-old">De R$ 49,90</div>
+                            <div class="price-current">
+                                <span class="currency">R$</span>
+                                <span class="amount">19</span>
+                                <span class="cents">,97</span>
+                            </div>
+                            <div class="price-installment">ou 2x de R$ 10,51</div>
+                        </div>
+                        
+                        <a href="https://pay.hotmart.com/D99386373B?bid=1749697455798" class="btn-primary btn-large">
+                            <i class="fas fa-shopping-cart"></i>
+                            Comprar Agora - Acesso Imediato
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="hero-image">
+                    <div class="ebook-mockup">
+                        <img src="banner_instagram_fixed.png" alt="E-book Código Fluente" class="ebook-cover-image">
+                        <div class="ebook-shadow"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Countdown Section -->
+    <section class="countdown-section">
+        <div class="container">
+            <div class="countdown-wrapper">
+                <div class="countdown-text">Oferta termina em:</div>
+                <div class="countdown">
+                    <div class="countdown-item">
+                        <div class="countdown-number" id="days">05</div>
+                        <div class="countdown-label">Dias</div>
+                    </div>
+                    <div class="countdown-item">
+                        <div class="countdown-number" id="hours">23</div>
+                        <div class="countdown-label">Horas</div>
+                    </div>
+                    <div class="countdown-item">
+                        <div class="countdown-number" id="minutes">59</div>
+                        <div class="countdown-label">Min</div>
+                    </div>
+                    <div class="countdown-item">
+                        <div class="countdown-number" id="seconds">58</div>
+                        <div class="countdown-label">Seg</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="sobre">
+        <div class="container">
+            <div class="section-header">
+                <h2>Por que escolher este e-book?</h2>
+                <p>Material desenvolvido especialmente para iniciantes que querem resultados rápidos</p>
+            </div>
+            
+            <div class="about-grid">
+                <div class="about-card">
+                    <div class="card-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3>Aprendizado Acelerado</h3>
+                    <p>Método direto e sem enrolação para você sair do zero ao primeiro projeto em semanas</p>
+                </div>
+                
+                <div class="about-card">
+                    <div class="card-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>Linguagem Simples</h3>
+                    <p>Explicações claras e acessíveis, ideal para quem nunca programou antes</p>
+                </div>
+                
+                <div class="about-card">
+                    <div class="card-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>100% Prático</h3>
+                    <p>Exercícios aplicáveis e projetos reais para fixar o conhecimento</p>
+                </div>
+                
+                <div class="about-card">
+                    <div class="card-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Acesso Total</h3>
+                    <p>Material digital acessível em qualquer dispositivo, a qualquer hora</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Content Section -->
+    <section class="content" id="conteudo">
+        <div class="container">
+            <div class="section-header">
+                <h2>O que você vai aprender</h2>
+                <p>Conteúdo completo e estruturado para sua jornada no front-end</p>
+            </div>
+            
+            <div class="content-grid">
+                <div class="content-main">
+                    <div class="content-item">
+                        <div class="content-icon">
+                            <i class="fab fa-html5"></i>
+                        </div>
+                        <div class="content-text">
+                            <h3>Fundamentos Sólidos</h3>
+                            <p>HTML, CSS, Bootstrap e JavaScript moderno com exemplos práticos</p>
+                        </div>
+                    </div>
+                    
+                    <div class="content-item">
+                        <div class="content-icon">
+                            <i class="fab fa-react"></i>
+                        </div>
+                        <div class="content-text">
+                            <h3>React Completo</h3>
+                            <p>React, React Router, Styled Components, Hooks, React Cache e Next.js</p>
+                        </div>
+                    </div>
+                    
+                    <div class="content-item">
+                        <div class="content-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <div class="content-text">
+                            <h3>Lógica de Programação</h3>
+                            <p>Conceitos fundamentais explicados de forma simples e direta</p>
+                        </div>
+                    </div>
+                    
+                    <div class="content-item">
+                        <div class="content-icon">
+                            <i class="fas fa-dumbbell"></i>
+                        </div>
+                        <div class="content-text">
+                            <h3>Exercícios Práticos</h3>
+                            <p>Mais de 100 exercícios para fixar o conhecimento</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bonus-section">
+                    <h3>🎁 Bônus Exclusivos</h3>
+                    <div class="bonus-list">
+                        <div class="bonus-item">
+                            <i class="fab fa-linkedin"></i>
+                            <span>LinkedIn atrativo para recrutadores</span>
+                        </div>
+                        <div class="bonus-item">
+                            <i class="fas fa-file-alt"></i>
+                            <span>Modelo de currículo da Microsoft</span>
+                        </div>
+                        <div class="bonus-item">
+                            <i class="fas fa-route"></i>
+                            <span>Jornada completa do front-end</span>
+                        </div>
+                        <div class="bonus-item">
+                            <i class="fas fa-search"></i>
+                            <span>Onde encontrar vagas remotas</span>
+                        </div>
+                        <div class="bonus-item">
+                            <i class="fas fa-map"></i>
+                            <span>Roadmap completo da carreira</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="depoimentos">
+        <div class="container">
+            <div class="section-header">
+                <h2>Depoimentos Reais</h2>
+                <p>Veja o que nossos alunos estão dizendo</p>
+            </div>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face" alt="João Silva">
+                        </div>
+                        <div class="testimonial-info">
+                            <h4>João Silva</h4>
+                            <div class="testimonial-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p>"Nunca pensei que aprender programação pudesse ser tão simples! O e-book é muito didático e me ajudou a conseguir meu primeiro emprego como desenvolvedor front-end."</p>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar">
+                            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&h=150&fit=crop&crop=face" alt="Maria Santos">
+                        </div>
+                        <div class="testimonial-info">
+                            <h4>Maria Santos</h4>
+                            <div class="testimonial-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p>"Excelente material! Os exercícios práticos fizeram toda a diferença no meu aprendizado. Recomendo para qualquer pessoa que quer entrar na área."</p>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar">
+                            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face" alt="Pedro Costa">
+                        </div>
+                        <div class="testimonial-info">
+                            <h4>Pedro Costa</h4>
+                            <div class="testimonial-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p>"O conteúdo sobre React é fantástico! Consegui criar meu primeiro projeto em React em apenas 2 semanas. Vale muito a pena!"</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq" id="faq">
+        <div class="container">
+            <div class="section-header">
+                <h2>Perguntas Frequentes</h2>
+                <p>Tire suas dúvidas sobre o e-book</p>
+            </div>
+            
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>O que vou aprender neste e-book?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Você aprenderá os fundamentos do front-end de forma prática, com exemplos, exercícios e dicas do mercado. O conteúdo inclui HTML, CSS, JavaScript, React e muito mais.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Para quem este e-book é indicado?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Para iniciantes que querem aprender programação front-end de forma leve e direta. Não é necessário conhecimento prévio em programação.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Como posso entrar em contato se tiver dúvidas?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Você pode entrar em contato pelo e-mail de suporte ou diretamente pela plataforma da Hotmart.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Posso parcelar o pagamento?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Sim! O e-book custa apenas R$19,97 e pode ser parcelado em 2x de R$10,51.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Como acesso o produto após a compra?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Faça login na Hotmart clicando em "Entrar", acesse o menu lateral e clique em "Minha Conta", vá até "Minhas Compras". Lá estarão todos os produtos que você adquiriu, incluindo este e-book!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta" id="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">Comece Sua Jornada Front-End Hoje!</h2>
+                <p class="cta-subtitle">Acesso imediato ao e-book e todos os bônus exclusivos</p>
+                
+                <div class="price-section">
+                    <div class="price-old">De R$ 49,90</div>
+                    <div class="price-current">
+                        <span class="currency">R$</span>
+                        <span class="amount">19</span>
+                        <span class="cents">,97</span>
+                    </div>
+                    <div class="price-installment">ou 2x de R$ 10,51</div>
+                </div>
+                
+                <a href="https://pay.hotmart.com/D99386373B?bid=1749697455798" class="btn-primary btn-large">
+                    <i class="fas fa-shopping-cart"></i>
+                    Comprar Agora - Acesso Imediato
+                </a>
+                
+                <div class="security-badges">
+                    <div class="badge-item">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>Compra 100% Segura</span>
+                    </div>
+                    <div class="badge-item">
+                        <i class="fas fa-undo"></i>
+                        <span>7 Dias de Garantia</span>
+                    </div>
+                    <div class="badge-item">
+                        <i class="fas fa-mobile-alt"></i>
+                        <span>Acesso em Todos os Dispositivos</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>Código Fluente</h3>
+                    <p>Transformando iniciantes em desenvolvedores front-end através de um aprendizado simples, prático e direto.</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Links Úteis</h4>
+                    <a href="#sobre">Sobre o E-book</a>
+                    <a href="#conteudo">Conteúdo</a>
+                    <a href="#depoimentos">Depoimentos</a>
+                    <a href="#faq">FAQ</a>
+                </div>
+                
+                <div class="footer-contact">
+                    <h4>Localização</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> São Paulo, SP</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Código Fluente. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
