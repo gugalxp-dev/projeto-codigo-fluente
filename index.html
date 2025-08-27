@@ -12,6 +12,46 @@
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        .payment-methods {
+            text-align: center;
+            margin-top: 25px;
+        }
+
+        .payment-title {
+            font-size: 30px;
+            font-weight: bold;
+            color: #fff;
+            margin-bottom: 15px;
+            margin: 58px;
+        }
+
+        .payment-icons {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 2px;
+        }
+
+        .payment-item {
+            text-align: center;
+            width: 100px;
+        }
+
+        .payment-item img {
+            width: 40px;
+            height: auto;
+            margin-bottom: 1px;
+        }
+
+        .payment-item span {
+            font-size: 13px;
+            color: #fff;
+            display: block;
+        }
+    </style>
+
 </head>
 
 <body>
@@ -82,12 +122,15 @@
 
                     <div class="hero-cta">
                         <div class="price-section">
-                            <div class="price-old">De R$ 49,90</div>
+                            <div class="price-old" style=font-size:25px;>De R$ 49,90</div>
                             <div class="price-current">
-                                <span class="">2 x de R$</span>
-                                <span class="amount">10,51</span>
+                                <span class="" style=font-size:30px;>por</span>
+                                <span class="amount" style=font-size:95px;">R$ 29,90</span>
                             </div>
-                            <div class="price-installment">ou R$ 19,97 à vista</div>
+                            <span style="color:#fff; font-size:14px;">
+                                Promoção válida apenas para os <b>50 primeiros compradores</b>.<br>
+                                Depois disso, o preço volta para <b>R$49,90</b>.
+                            </span>
                         </div>
 
                         <a href="https://mpago.la/2ddfDej" class="btn-primary btn-large">
@@ -410,12 +453,15 @@
 
                 <div class="hero-cta">
                     <div class="price-section">
-                        <div class="price-old">De R$ 49,90</div>
+                        <div class="price-old" style=font-size:25px;>De R$ 49,90</div>
                         <div class="price-current">
-                            <span class="">2 x de R$</span>
-                            <span class="amount">10,51</span>
+                            <span class="" style=font-size:30px;>por</span>
+                            <span class="amount" style=font-size:95px;">R$ 29,90</span>
                         </div>
-                        <div class="price-installment">ou R$ 19,97 à vista</div>
+                        <span style="color:#fff; font-size:14px;">
+                            Promoção válida apenas para os <b>50 primeiros compradores</b>.<br>
+                            Depois disso, o preço volta para <b>R$49,90</b>.
+                        </span>
                     </div>
 
                     <a href="https://mpago.la/2ddfDej" target="_blank" class="btn-primary btn-large"
@@ -437,6 +483,34 @@
                     <span>Acesso em Todos os Dispositivos</span>
                 </div>
             </div>
+
+            <!-- Métodos de Pagamento -->
+            <div class="payment-methods">
+                <p class="payment-title">Aceitamos os seguintes tipos de pagamento:</p>
+                <div class="payment-icons">
+                    <div class="payment-item">
+                        <img src="https://cdn-icons-png.flaticon.com/512/6404/6404078.png" alt="Cartão de Crédito">
+                        <span>Cartão de Crédito</span>
+                    </div>
+                    <div class="payment-item">
+                        <img src="https://logospng.org/download/pix/logo-pix-icone-1024.png" alt="Pix">
+                        <span>Pix</span>
+                    </div>
+                    <div class="payment-item">
+                        <img src="https://cdn-icons-png.flaticon.com/512/6496/6496685.png" alt="Boleto">
+                        <span>Boleto</span>
+                    </div>
+                    <div class="payment-item">
+                        <img src="https://logospng.org/download/mercado-pago/logo-mercado-pago-256.png" alt="Mercado Pago">
+                        <span>Mercado Pago</span>
+                    </div>
+                    <div class="payment-item">
+                        <img src="caixa.png" alt="Cartão Virtual Caixa">
+                        <span>Cartão Virtual Caixa</span>
+                    </div>
+                </div>
+            </div>
+
         </div>
         </div>
     </section>
