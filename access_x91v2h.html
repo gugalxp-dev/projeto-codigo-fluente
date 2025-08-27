@@ -3,13 +3,19 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Obrigado!</title>
     <style>
+        /* Centraliza conteúdo vertical e horizontalmente */
         body {
             font-family: Arial, sans-serif;
-            text-align: center;
             background: #f4f4f4;
-            padding: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            padding: 20px;
         }
 
         .box {
@@ -17,20 +23,68 @@
             padding: 30px;
             border-radius: 12px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-            display: inline-block;
             max-width: 400px;
+            width: 100%;
+            text-align: center;
+            box-sizing: border-box;
         }
 
         h1 {
             color: #5234c7;
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+        }
+
+        p {
+            margin: 10px 0;
         }
 
         .ebook-image {
-            margin: 3px 0 0;
+            margin: 10px 0;
             max-width: 150px;
+            /* limite máximo */
+            width: 80%;
+            /* reduz proporcionalmente em telas pequenas */
+            height: auto;
             border-radius: 12px;
             box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
-            animation: bounce 1s ease infinite alternate;
+            animation: bounce 2s ease infinite;
+        }
+
+        /* Animação do banner */
+        @keyframes bounce {
+            0% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-10px);
+            }
+
+            100% {
+                transform: translateY(0);
+            }
+        }
+
+        /* Ajustes para telas pequenas */
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.5rem;
+            }
+
+            .box {
+                padding: 20px;
+            }
+        }
+
+        @media (max-width: 320px) {
+            h1 {
+                font-size: 1.2rem;
+            }
+
+            .box {
+                padding: 15px;
+            }
         }
     </style>
 </head>
