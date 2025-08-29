@@ -1030,6 +1030,30 @@ body {
     font-family: 'Comic Neue', cursive;
 }
 
+/* Ícones sociais */
+.footer-social h4 {
+    font-size: 19.2px;
+    font-family: 'Bubblegum Sans', cursive;
+    color: var(--cartoon-blue);
+    margin-bottom: 24.3px; 
+}
+
+.footer-social a {
+    margin-right: 13px; 
+    font-size: 1.6rem;
+    color: var(--white);
+    transition: 0.3s;
+}
+
+.footer-social a:last-child {
+    margin-right: 0; 
+}
+
+.footer-social a:hover {
+    color: #ff4081;
+}
+
+
 /* Responsive Styles */
 @media (max-width: 1200px) {
     .hero-title {
