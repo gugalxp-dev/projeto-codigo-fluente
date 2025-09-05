@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Código Fluente - E-book Completo</title>
     <meta name="description"
-        content="Domine o front-end de forma simples, prática e direta com o e-book Código Fluente. 199 páginas focadas em iniciantes.">
+        content="Domine o front-end de forma simples, prática e direta com o e-book Código Fluente. 200 páginas focadas em iniciantes.">
     <meta property="og:image" content="https://i.ibb.co/Vp9CgyY7/banner-instagram-fixed.png">
 
     <link rel="icon" href="favicon.ico" type="image/x-icon">
@@ -31,7 +31,7 @@
             font-family: 'Open Sans', sans-serif;
             line-height: 1.6;
             color: #ffffff;
-            background: #1f014b;
+            background: #000000;
             overflow-x: hidden;
         }
 
@@ -39,6 +39,80 @@
             max-width: 1200px;
             margin: 0 auto;
             padding: 0 20px;
+        }
+
+        /* Testimonials Section */
+        .testimonials {
+            padding: 4rem 0;
+            background: #1f014b;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .section-header h2 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #ffffff;
+            margin-bottom: 0.5rem;
+            animation: fadeInUp 0.8s ease-out;
+        }
+
+        .section-header p {
+            font-size: 1.2rem;
+            color: #cccccc;
+            animation: fadeInUp 0.8s ease-out 0.2s;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            /* 2 colunas */
+            gap: 1rem;
+            padding: 0 1rem;
+        }
+
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .gallery-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(233, 22, 148, 0.3);
+        }
+
+        .gallery-icon img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item:hover .gallery-icon img {
+            transform: scale(1.05);
+        }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            .gallery {
+                grid-template-columns: 1fr;
+                /* 1 coluna em telas menores */
+            }
+
+            .section-header h2 {
+                font-size: 2rem;
+            }
+
+            .section-header p {
+                font-size: 1rem;
+            }
         }
 
         /* Animações de entrada */
@@ -300,7 +374,7 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background: linear-gradient(135deg, rgba(31, 1, 75, 0.8) 0%, rgba(31, 1, 75, 0.6) 50%, rgba(31, 1, 75, 0.8) 100%);
+            background: #000000;
             z-index: -1;
         }
 
@@ -394,8 +468,7 @@
 
         /* Seção de Aprendizado Mobile */
         .mobile-learning-section {
-            background: rgba(255, 255, 255, 0.1);
-            border: 2px solid rgba(255, 255, 255, 0.3);
+            background: rgb(0, 0, 0);
             border-radius: 15px;
             padding: 2rem;
             margin: 2rem 0;
@@ -424,6 +497,7 @@
             gap: 0.8rem;
             padding: 0.8rem;
             background: rgba(0, 0, 0, 0.2);
+            border: 1px solid;
             border-radius: 10px;
             transition: all 0.3s ease;
         }
@@ -600,10 +674,8 @@
 
         /* Countdown Section */
         .countdown-section {
-            background: rgba(0, 0, 0, 0.5);
+            background: rgb(0, 0, 0);
             padding: 2rem 0;
-            border-top: 1px solid rgba(255, 255, 255, 0.2);
-            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
         }
 
         .countdown-wrapper {
@@ -987,7 +1059,7 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background: radial-gradient(circle at center, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
+            background: #000000;
             z-index: 1;
         }
 
@@ -1179,9 +1251,7 @@
         /* Responsividade */
         @media (max-width: 768px) {
             .ebook-mockup {
-                position: relative;
-                transform: none;
-                transition: all 0.3s ease;
+                display: none;
             }
 
             .nav-links {
@@ -1204,9 +1274,8 @@
             }
 
             .hero-content {
-                grid-template-columns: 1fr;
-                gap: 2rem;
-                text-align: center;
+                margin-top: -4rem;
+                display: block;
             }
 
             .hero-title {
@@ -1438,7 +1507,7 @@
                     </h1>
 
                     <p class="hero-subtitle">
-                        Domine o front-end de forma simples, prática e direta. São 199 páginas focadas em iniciantes com
+                        Domine o front-end de forma simples, prática e direta. São 200 páginas focadas em iniciantes com
                         uma linguagem clara e acessível. <strong>Estude onde quiser, quando quiser!</strong>
                     </p>
 
@@ -1534,7 +1603,7 @@
     <section class="about" id="sobre">
         <div class="container">
             <div class="section-header">
-                <h2>Por que escolher este e-book?</h2>
+                <h2>Por que escolher este E-BOOK?</h2>
                 <p>Material desenvolvido especialmente para iniciantes que querem resultados rápidos</p>
             </div>
 
@@ -1569,6 +1638,14 @@
                     </div>
                     <h3>Acesso Total</h3>
                     <p>Material digital acessível em qualquer dispositivo, a qualquer hora</p>
+                </div>
+
+                <div class="about-card">
+                    <div class="card-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3>200 Páginas</h3>
+                    <p>Extremamente completo, feito para você!</p>
                 </div>
             </div>
         </div>
@@ -1658,73 +1735,165 @@
     <section class="testimonials" id="depoimentos">
         <div class="container">
             <div class="section-header">
-                <h2>Depoimentos Reais</h2>
-                <p>Veja o que nossos alunos estão dizendo</p>
+                <h2>Falar é Fácil, Provar é Ainda Mais!</h2>
+                <p>Veja as opiniões:</p>
             </div>
 
-            <div class="testimonials-grid">
-                <div class="testimonial-card">
-                    <div class="testimonial-header">
-                        <div class="testimonial-avatar">
-                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face"
-                                alt="João Silva">
-                        </div>
-                        <div class="testimonial-info">
-                            <h4>João Silva</h4>
-                            <div class="testimonial-stars">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                        </div>
+            <div id="gallery-1" class="gallery galleryid-8 gallery-columns-3 gallery-size-full">
+                <figure class="gallery-item">
+                    <div class="gallery-icon landscape">
+                        <a data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="18580aa"
+                            data-elementor-lightbox-title="Captura de tela 2024-08-30 164622"
+                            data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6ODk3LCJ1cmwiOiJodHRwczpcL1wvZG10cmVpbmFtZW50b3Mub25saW5lXC93cC1jb250ZW50XC91cGxvYWRzXC8yMDI0XC8wOFwvQ2FwdHVyYS1kZS10ZWxhLTIwMjQtMDgtMzAtMTY0NjIyLnBuZyIsInNsaWRlc2hvdyI6IjE4NTgwYWEifQ%3D%3D"
+                            href="https://dmtreinamentos.online/wp-content/uploads/2024/08/Captura-de-tela-2024-08-30-164622.png">
+                            <img loading="lazy" decoding="async" width="491" height="84"
+                                src="https://dmtreinamentos.online/wp-content/uploads/2024/08/Captura-de-tela-2024-08-30-164622.png"
+                                class="attachment-full size-full" alt=""
+                                srcset="https://dmtreinamentos.online/wp-content/uploads/2024/08/Captura-de-tela-2024-08-30-164622.png 491w, https://dmtreinamentos.online/wp-content/uploads/2024/08/Captura-de-tela-2024-08-30-164622-300x51.png 300w"
+                                sizes="(max-width: 491px) 100vw, 491px">
+                        </a>
                     </div>
-                    <p>"Nunca pensei que aprender programação pudesse ser tão simples! O e-book é muito didático e me
-                        ajudou a conseguir meu primeiro emprego como desenvolvedor front-end."</p>
-                </div>
-
-                <div class="testimonial-card">
-                    <div class="testimonial-header">
-                        <div class="testimonial-avatar">
-                            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&h=150&fit=crop&crop=face"
-                                alt="Maria Santos">
-                        </div>
-                        <div class="testimonial-info">
-                            <h4>Maria Santos</h4>
-                            <div class="testimonial-stars">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                        </div>
+                </figure>
+                <figure class="gallery-item">
+                    <div class="gallery-icon landscape">
+                        <a data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="18580aa"
+                            data-elementor-lightbox-title="Captura de tela 2024-08-30 164316"
+                            data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6ODk0LCJ1cmwiOiJodHRwczpcL1wvZG10cmVpbmFtZW50b3Mub25saW5lXC93cC1jb250ZW50XC91cGxvYWRzXC8yMDI0XC8wOFwvQ2FwdHVyYS1kZS10ZWxhLTIwMjQtMDgtMzAtMTY0MzE2LnBuZyIsInNsaWRlc2hvdyI6IjE4NTgwYWEifQ%3D%3D"
+                            href="https://dmtreinamentos.online/wp-content/uploads/2024/08/Captura-de-tela-2024-08-30-164316.png">
+                            <img loading="lazy" decoding="async" width="365" height="84"
+                                src="https://dmtreinamentos.online/wp-content/uploads/2024/08/Captura-de-tela-2024-08-30-164316.png"
+                                class="attachment-full size-full" alt=""
+                                srcset="https://dmtreinamentos.online/wp-content/uploads/2024/08/Captura-de-tela-2024-08-30-164316.png 365w, https://dmtreinamentos.online/wp-content/uploads/2024/08/Captura-de-tela-2024-08-30-164316-300x69.png 300w"
+                                sizes="(max-width: 365px) 100vw, 365px">
+                        </a>
                     </div>
-                    <p>"Excelente material! Os exercícios práticos fizeram toda a diferença no meu aprendizado.
-                        Recomendo para qualquer pessoa que quer entrar na área."</p>
-                </div>
-
-                <div class="testimonial-card">
-                    <div class="testimonial-header">
-                        <div class="testimonial-avatar">
-                            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face"
-                                alt="Pedro Costa">
-                        </div>
-                        <div class="testimonial-info">
-                            <h4>Pedro Costa</h4>
-                            <div class="testimonial-stars">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                        </div>
+                </figure>
+                <figure class="gallery-item">
+                    <div class="gallery-icon landscape">
+                        <a data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="18580aa"
+                            data-elementor-lightbox-title="Captura de tela 2024-08-30 164238"
+                            data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6OTA0LCJ1cmwiOiJodHRwczpcL1wvZG10cmVpbmFtZW50b3Mub25saW5lXC93cC1jb250ZW50XC91cGxvYWRzXC8yMDI0XC8wOFwvQ2FwdHVyYS1kZS10ZWxhLTIwMjQtMDgtMzAtMTY0MjM4LTEucG5nIiwic2xpZGVzaG93IjoiMTg1ODBhYSJ9"
+                            href="https://dmtreinamentos.online/wp-content/uploads/2024/08/Captura-de-tela-2024-08-30-164238-1.png">
+                            <img loading="lazy" decoding="async" width="458" height="100"
+                                src="https://dmtreinamentos.online/wp-content/uploads/2024/08/Captura-de-tela-2024-08-30-164238-1.png"
+                                class="attachment-full size-full" alt=""
+                                srcset="https://dmtreinamentos.online/wp-content/uploads/2024/08/Captura-de-tela-2024-08-30-164238-1.png 458w, https://dmtreinamentos.online/wp-content/uploads/2024/08/Captura-de-tela-2024-08-30-164238-1-300x66.png 300w"
+                                sizes="(max-width: 458px) 100vw, 458px">
+                        </a>
                     </div>
-                    <p>"O conteúdo sobre React é fantástico! Consegui criar meu primeiro projeto em React em apenas 2
-                        semanas. Vale muito a pena!"</p>
-                </div>
+                </figure>
+                <figure class="gallery-item">
+                    <div class="gallery-icon landscape">
+                        <a data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="18580aa"
+                            data-elementor-lightbox-title="Captura de tela 2024-08-30 164433"
+                            data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6ODk1LCJ1cmwiOiJodHRwczpcL1wvZG10cmVpbmFtZW50b3Mub25saW5lXC93cC1jb250ZW50XC91cGxvYWRzXC8yMDI0XC8wOFwvQ2FwdHVyYS1kZS10ZWxhLTIwMjQtMDgtMzAtMTY0NDMzLnBuZyIsInNsaWRlc2hvdyI6IjE4NTgwYWEifQ%3D%3D"
+                            href="https://dmtreinamentos.online/wp-content/uploads/2024/08/Captura-de-tela-2024-08-30-164433.png">
+                            <img loading="lazy" decoding="async" width="469" height="124"
+                                src="https://dmtreinamentos.online/wp-content/uploads/2024/08/Captura-de-tela-2024-08-30-164433.png"
+                                class="attachment-full size-full" alt=""
+                                srcset="https://dmtreinamentos.online/wp-content/uploads/2024/08/Captura-de-tela-2024-08-30-164433.png 469w, https://dmtreinamentos.online/wp-content/uploads/2024/08/Captura-de-tela-2024-08-30-164433-300x79.png 300w"
+                                sizes="(max-width: 469px) 100vw, 469px">
+                        </a>
+                    </div>
+                </figure>
+                <figure class="gallery-item">
+                    <div class="gallery-icon landscape">
+                        <a data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="18580aa"
+                            data-elementor-lightbox-title="Captura de tela 2024-08-30 164642"
+                            data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6ODk4LCJ1cmwiOiJodHRwczpcL1wvZG10cmVpbmFtZW50b3Mub25saW5lXC93cC1jb250ZW50XC91cGxvYWRzXC8yMDI0XC8wOFwvQ2FwdHVyYS1kZS10ZWxhLTIwMjQtMDgtMzAtMTY0NjQyLnBuZyIsInNsaWRlc2hvdyI6IjE4NTgwYWEifQ%3D%3D"
+                            href="https://dmtreinamentos.online/wp-content/uploads/2024/08/Captura-de-tela-2024-08-30-164642.png">
+                            <img loading="lazy" decoding="async" width="495" height="88"
+                                src="https://dmtreinamentos.online/wp-content/uploads/2024/08/Captura-de-tela-2024-08-30-164642.png"
+                                class="attachment-full size-full" alt=""
+                                srcset="https://dmtreinamentos.online/wp-content/uploads/2024/08/Captura-de-tela-2024-08-30-164642.png 495w, https://dmtreinamentos.online/wp-content/uploads/2024/08/Captura-de-tela-2024-08-30-164642-300x53.png 300w"
+                                sizes="(max-width: 495px) 100vw, 495px">
+                        </a>
+                    </div>
+                </figure>
+                <figure class="gallery-item">
+                    <div class="gallery-icon landscape">
+                        <a data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="18580aa"
+                            data-elementor-lightbox-title="Captura de tela 2024-08-30 164817"
+                            data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6OTAwLCJ1cmwiOiJodHRwczpcL1wvZG10cmVpbmFtZW50b3Mub25saW5lXC93cC1jb250ZW50XC91cGxvYWRzXC8yMDI0XC8wOFwvQ2FwdHVyYS1kZS10ZWxhLTIwMjQtMDgtMzAtMTY0ODE3LnBuZyIsInNsaWRlc2hvdyI6IjE4NTgwYWEifQ%3D%3D"
+                            href="https://dmtreinamentos.online/wp-content/uploads/2024/08/Captura-de-tela-2024-08-30-164817.png">
+                            <img loading="lazy" decoding="async" width="556" height="73"
+                                src="https://dmtreinamentos.online/wp-content/uploads/2024/08/Captura-de-tela-2024-08-30-164817.png"
+                                class="attachment-full size-full" alt=""
+                                srcset="https://dmtreinamentos.online/wp-content/uploads/2024/08/Captura-de-tela-2024-08-30-164817.png 556w, https://dmtreinamentos.online/wp-content/uploads/2024/08/Captura-de-tela-2024-08-30-164817-300x39.png 300w"
+                                sizes="(max-width: 556px) 100vw, 556px">
+                        </a>
+                    </div>
+                </figure>
+                <figure class="gallery-item">
+                    <div class="gallery-icon landscape">
+                        <a data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="18580aa"
+                            data-elementor-lightbox-title="Captura de tela 2024-08-30 164906"
+                            data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6OTAxLCJ1cmwiOiJodHRwczpcL1wvZG10cmVpbmFtZW50b3Mub25saW5lXC93cC1jb250ZW50XC91cGxvYWRzXC8yMDI0XC8wOFwvQ2FwdHVyYS1kZS10ZWxhLTIwMjQtMDgtMzAtMTY0OTA2LnBuZyIsInNsaWRlc2hvdyI6IjE4NTgwYWEifQ%3D%3D"
+                            href="https://dmtreinamentos.online/wp-content/uploads/2024/08/Captura-de-tela-2024-08-30-164906.png">
+                            <img loading="lazy" decoding="async" width="317" height="66"
+                                src="https://dmtreinamentos.online/wp-content/uploads/2024/08/Captura-de-tela-2024-08-30-164906.png"
+                                class="attachment-full size-full" alt=""
+                                srcset="https://dmtreinamentos.online/wp-content/uploads/2024/08/Captura-de-tela-2024-08-30-164906.png 317w, https://dmtreinamentos.online/wp-content/uploads/2024/08/Captura-de-tela-2024-08-30-164906-300x62.png 300w"
+                                sizes="(max-width: 317px) 100vw, 317px">
+                        </a>
+                    </div>
+                </figure>
+                <figure class="gallery-item">
+                    <div class="gallery-icon landscape">
+                        <a data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="18580aa"
+                            data-elementor-lightbox-title="Captura de tela 2024-08-30 165018"
+                            data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6OTAzLCJ1cmwiOiJodHRwczpcL1wvZG10cmVpbmFtZW50b3Mub25saW5lXC93cC1jb250ZW50XC91cGxvYWRzXC8yMDI0XC8wOFwvQ2FwdHVyYS1kZS10ZWxhLTIwMjQtMDgtMzAtMTY1MDE4LnBuZyIsInNsaWRlc2hvdyI6IjE4NTgwYWEifQ%3D%3D"
+                            href="https://dmtreinamentos.online/wp-content/uploads/2024/08/Captura-de-tela-2024-08-30-165018.png">
+                            <img loading="lazy" decoding="async" width="326" height="65"
+                                src="https://dmtreinamentos.online/wp-content/uploads/2024/08/Captura-de-tela-2024-08-30-165018.png"
+                                class="attachment-full size-full" alt=""
+                                srcset="https://dmtreinamentos.online/wp-content/uploads/2024/08/Captura-de-tela-2024-08-30-165018.png 326w, https://dmtreinamentos.online/wp-content/uploads/2024/08/Captura-de-tela-2024-08-30-165018-300x60.png 300w"
+                                sizes="(max-width: 326px) 100vw, 326px">
+                        </a>
+                    </div>
+                </figure>
+                <figure class="gallery-item">
+                    <div class="gallery-icon landscape">
+                        <a data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="18580aa"
+                            data-elementor-lightbox-title="Captura de tela 2024-08-30 164944"
+                            data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6OTAyLCJ1cmwiOiJodHRwczpcL1wvZG10cmVpbmFtZW50b3Mub25saW5lXC93cC1jb250ZW50XC91cGxvYWRzXC8yMDI0XC8wOFwvQ2FwdHVyYS1kZS10ZWxhLTIwMjQtMDgtMzAtMTY0OTQ0LnBuZyIsInNsaWRlc2hvdyI6IjE4NTgwYWEifQ%3D%3D"
+                            href="https://dmtreinamentos.online/wp-content/uploads/2024/08/Captura-de-tela-2024-08-30-164944.png">
+                            <img loading="lazy" decoding="async" width="340" height="60"
+                                src="https://dmtreinamentos.online/wp-content/uploads/2024/08/Captura-de-tela-2024-08-30-164944.png"
+                                class="attachment-full size-full" alt=""
+                                srcset="https://dmtreinamentos.online/wp-content/uploads/2024/08/Captura-de-tela-2024-08-30-164944.png 340w, https://dmtreinamentos.online/wp-content/uploads/2024/08/Captura-de-tela-2024-08-30-164944-300x53.png 300w"
+                                sizes="(max-width: 340px) 100vw, 340px">
+                        </a>
+                    </div>
+                </figure>
+                <figure class="gallery-item">
+                    <div class="gallery-icon landscape">
+                        <a data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="18580aa"
+                            data-elementor-lightbox-title="Captura de tela 2024-08-30 164452"
+                            data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6ODk2LCJ1cmwiOiJodHRwczpcL1wvZG10cmVpbmFtZW50b3Mub25saW5lXC93cC1jb250ZW50XC91cGxvYWRzXC8yMDI0XC8wOFwvQ2FwdHVyYS1kZS10ZWxhLTIwMjQtMDgtMzAtMTY0NDUyLnBuZyIsInNsaWRlc2hvdyI6IjE4NTgwYWEifQ%3D%3D"
+                            href="https://dmtreinamentos.online/wp-content/uploads/2024/08/Captura-de-tela-2024-08-30-164452.png">
+                            <img loading="lazy" decoding="async" width="495" height="85"
+                                src="https://dmtreinamentos.online/wp-content/uploads/2024/08/Captura-de-tela-2024-08-30-164452.png"
+                                class="attachment-full size-full" alt=""
+                                srcset="https://dmtreinamentos.online/wp-content/uploads/2024/08/Captura-de-tela-2024-08-30-164452.png 495w, https://dmtreinamentos.online/wp-content/uploads/2024/08/Captura-de-tela-2024-08-30-164452-300x52.png 300w"
+                                sizes="(max-width: 495px) 100vw, 495px">
+                        </a>
+                    </div>
+                </figure>
+                <figure class="gallery-item">
+                    <div class="gallery-icon landscape">
+                        <a data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="18580aa"
+                            data-elementor-lightbox-title="Captura de tela 2024-08-30 164658"
+                            data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6ODk5LCJ1cmwiOiJodHRwczpcL1wvZG10cmVpbmFtZW50b3Mub25saW5lXC93cC1jb250ZW50XC91cGxvYWRzXC8yMDI0XC8wOFwvQ2FwdHVyYS1kZS10ZWxhLTIwMjQtMDgtMzAtMTY0NjU4LnBuZyIsInNsaWRlc2hvdyI6IjE4NTgwYWEifQ%3D%3D"
+                            href="https://dmtreinamentos.online/wp-content/uploads/2024/08/Captura-de-tela-2024-08-30-164658.png">
+                            <img loading="lazy" decoding="async" width="490" height="80"
+                                src="https://dmtreinamentos.online/wp-content/uploads/2024/08/Captura-de-tela-2024-08-30-164658.png"
+                                class="attachment-full size-full" alt=""
+                                srcset="https://dmtreinamentos.online/wp-content/uploads/2024/08/Captura-de-tela-2024-08-30-164658.png 490w, https://dmtreinamentos.online/wp-content/uploads/2024/08/Captura-de-tela-2024-08-30-164658-300x49.png 300w"
+                                sizes="(max-width: 490px) 100vw, 490px">
+                        </a>
+                    </div>
+                </figure>
             </div>
         </div>
     </section>
